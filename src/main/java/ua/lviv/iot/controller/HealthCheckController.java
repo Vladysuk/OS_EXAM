@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class HealthCheckController {
 
-  @RequestMapping(value = "/healthcheck", method = RequestMethod.GET)
+  @RequestMapping(value = "/health", method = RequestMethod.GET)
   public ResponseEntity returnHealthCheckResponse() {
       return new ResponseEntity<>("I'm healthy", HttpStatus.OK);
   }
